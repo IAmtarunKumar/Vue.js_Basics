@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- veu.js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+</head>
+<body>
+
+<!-- Click function  -->
+
+<div id="app">
+    <p>{{ message }}</p>
+    <button v-on:click="changeMessage">Click Me</button>
+  </div>
+
+
+
+
+
+
+  <script>
+
+//click function
+  new Vue({
+    el: '#app',
+    data: {
+      message: ''
+    },
+    methods: {
+      changeMessage: function() {
+        this.message = 'Hello, World!';
+      }
+    }
+  });
+
+
+ 
+
+
+// apply componenet
+
+
+
+
+
+  </script>
+  
+
+    
+</body>
+</html>
